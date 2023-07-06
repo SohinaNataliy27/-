@@ -125,8 +125,6 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-
-
 // Console.Write("Введи число: ");
 // int anyNumber = Convert.ToInt32(Console.ReadLine());
 // string anyNumberText = Convert.ToString(anyNumber);
@@ -136,3 +134,80 @@
 // else {
 //   Console.WriteLine("-> третьей цифры нет");
 // }
+
+// Задача 19
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+
+
+// Console.WriteLine("Введите число: ");
+// string number = Console.ReadLine();
+// int len = number.Length;
+
+// if (len == 5)
+// {
+//     if (number[0] == number[4] && number[1] == number[3])
+//     {
+//         Console.WriteLine($"{number} - Палиндром");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"{number} - НЕ палиндром");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine($"ОШИБКА: {number} - не является пятизначным");
+// }
+
+// 17. Напишите программу, которая принимает на вход координаты точки (X и Y),причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, 
+//  в которой находится эта точка.
+
+// int x = ReadNumber("Введите X: ");
+// int y = ReadNumber("Введите Y: ");
+// int quadrant = GetQuadrant(x, y);
+//  MessageBox.Show($"Точка находится в {quadrant} четверти плоскости.");
+
+//  }
+       
+// static void Task_10() 
+//     {
+//         int quadrant = ReadNumber("Введите номер четверти: ");
+//          string coordinateRange = GetCoordinateRange(quadrant);
+//          MessageBox.Show($"Диапазон координат точек в четверти {quadrant}: {coordinateRange}");
+//     }
+
+        
+//     static void task_11() 
+//      {
+        
+//         double x1 = ReadNumber("Введите X:");
+//          double y1 = ReadNumber("Введите Y:");
+
+       
+//         double x2 = ReadNumber("Введите X2:");
+//         double y2 = ReadNumber("Введите Y2:");
+
+//         double distance = CalculateDistance(x1, y1, x2, y2);
+
+//         MessageBox.Show($"Расстояние между двумя точками: {distance}");
+//         }
+//         static void task_12() ;
+//         }
+
+  
+//   Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+ int number = ReadNumber("Введите пятизначное число: ");
+bool isPalindrome = IsPalindrome(number);
+
+ if (isPalindrome)
+    {
+    MessageBox.Show("Число является палиндромом.");
+    }
+ else
+  {
+ MessageBox.Show("Число не является палиндромом.");
+ }
