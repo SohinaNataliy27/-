@@ -198,16 +198,48 @@
 //         }
 
   
-//   Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// //   Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
- int number = ReadNumber("Введите пятизначное число: ");
-bool isPalindrome = IsPalindrome(number);
+//  int number = ReadNumber("Введите пятизначное число: ");
+// bool isPalindrome = IsPalindrome(number);
 
- if (isPalindrome)
-    {
-    MessageBox.Show("Число является палиндромом.");
-    }
- else
-  {
- MessageBox.Show("Число не является палиндромом.");
+//  if (isPalindrome)
+//     {
+//     MessageBox.Show("Число является палиндромом.");
+//     }
+//  else
+//   {
+//  MessageBox.Show("Число не является палиндромом.");
+//  }
+// Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+//                                 [345, 897, 568, 234] -> 2
+
+//  int[] numbers = new int[4];
+// Random random = new Random();
+// int countEven = 0;
+
+// for (int i = 0; i < numbers.Length; i++)
+//    {
+//      numbers[i] = random.Next(100, 1000);
+//      if (numbers[i] % 2 == 0)
+//     {
+//        countEven++;
+//     }
+//    }
+
+// Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
+ int[] array = new int[4];
+ Random random = new Random();
+ int sum = 0;
+
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = random.Next(-10, 11);
+   if (i % 2 != 0)
+   {
+    sum += array[i];
+   }
  }
+
